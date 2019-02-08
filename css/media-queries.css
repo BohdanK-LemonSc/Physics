@@ -100,4 +100,16 @@
     header nav .social_icons a {
         float: none;
     }
+    .succes_stories .item .background {
+        float: none;
+        width: auto;
+        max-width: 300px;
+        margin: auto;
+        background-position: top center;
+    }
+    .succes_stories .item .content {
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
 }

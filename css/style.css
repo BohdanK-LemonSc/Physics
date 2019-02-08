@@ -187,6 +187,7 @@ h1 {
 .succes_stories .article_header {
     padding: 25px 0;
     background-color: black;
+    margin-bottom: 50px;
 }
 
 .succes_stories .article_header h2 {
@@ -196,3 +197,39 @@ h1 {
     font-size: 33px;
     text-align: center;
 }
+
+.physics_slider {
+    max-width: 1040px;
+    margin: auto;
+}
+
+.succes_stories .content h2 {
+    text-transform: uppercase;
+    font-family: bebasneueregular, Arial, sans-serif;
+    color: white;
+    font-size: 25px;
+    background-color: #ff0000;
+    padding: 10px 50px;
+}
+
+.succes_stories .content p {
+    font-family: 'MetropolisMedium', Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height: 24px;
+    padding: 30px 50px;
+}
+
+.succes_stories .item .background {
+    background: url("../images/slider_bg.jpg") no-repeat center center;
+    background-size: cover;
+    width: 30%;
+    min-height: 370px;
+    float: left;
+}
+
+.succes_stories .item .content {
+    float: right;
+    width: 70%;
+}
+
