@@ -1,0 +1,198 @@
+/*@charset "utf-8";*/
+@font-face {
+    font-family: 'MetropolisMedium';
+    src: url('../fonts/MetropolisMedium.eot');
+    src: url('../fonts/MetropolisMedium.eot') format('embedded-opentype'),
+    url('../fonts/MetropolisMedium.woff2') format('woff2'),
+    url('../fonts/MetropolisMedium.woff') format('woff'),
+    url('../fonts/MetropolisMedium.ttf') format('truetype'),
+    url('../fonts/MetropolisMedium.svg#MetropolisMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'bebasneueregular';
+    src: url('../fonts/bebasneueregular.eot');
+    src: url('../fonts/bebasneueregular.eot') format('embedded-opentype'),
+    url('../fonts/bebasneueregular.woff2') format('woff2'),
+    url('../fonts/bebasneueregular.woff') format('woff'),
+    url('../fonts/bebasneueregular.ttf') format('truetype'),
+    url('../fonts/bebasneueregular.svg#bebasneueregular') format('svg');
+}
+
+header {
+    padding-bottom: 20px;
+    background: black url("../images/header_background.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.bg_dark_color {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding-top: 25px;
+}
+
+.container {
+    max-width: 1220px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header input:focus,
+header button:focus {
+    outline: none;
+}
+
+header .logo {
+    float: left;
+    max-width: 30%;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header input::-webkit-input-placeholder {
+    color: #979797;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+header form {
+    background-color: #ebebeb;
+    float: right;
+    border-radius: 3px;
+    padding: 11px;
+    width: 100%;
+    max-width: 210px;
+    max-height: 40px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 10px 0 25px 0;
+}
+
+header input {
+    background-color: transparent;
+    border: none;
+    float: left;
+    max-width: 75%;
+}
+
+header button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    float: right;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-size: 15px;
+    min-width: 170px;
+    line-height: 40px;
+    display: block;
+    float: right;
+    margin-left: 25px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'MetropolisMedium', Arial, sans-serif;
+}
+
+.btn_basket {
+    background-color: #292929;
+}
+
+.btn_login {
+    background-color: #484848;
+}
+
+.btn_sign {
+    background-color: #d71112;
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+header nav {
+    padding: 10px 0;
+    border-top: #484848 2px solid;
+    clear: both;
+}
+
+header nav ul {
+    float: left;
+}
+
+header nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: bebasneueregular, Arial, sans-serif;
+    display: block;
+    padding: 5px 6px;
+    border-bottom: 4px solid transparent;
+}
+
+header nav li a:hover {
+    border-bottom: 4px solid #db0100;
+}
+
+header nav .social_icons a {
+    float: right;
+    color: #db0100;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.fab.fa-instagram {
+    color: black;
+    font-size: 24px;
+    background-color: #db0100;
+    height: 25px;
+    min-width: 25px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 1px;
+    margin-top: 2px;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    font-family: bebasneueregular, Arial, sans-serif;
+    border-bottom: 3px solid #db0100;
+    padding: 65px 0 30px 0;
+}
+
+.succes_stories .article_header {
+    padding: 25px 0;
+    background-color: black;
+}
+
+.succes_stories .article_header h2 {
+    color: white;
+    text-transform: uppercase;
+    font-family: bebasneueregular, Arial, sans-serif;
+    font-size: 33px;
+    text-align: center;
+}

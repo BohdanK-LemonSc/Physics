@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1199px) {
+    header nav li {
+        margin-right: 10px;
+    }
+
+    header nav li a {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        min-width: 15%;
+        margin-left: 2%;
+    }
+
+    header form {
+        max-width: 16%;
+    }
+
+    header input {
+        max-width: 75%;
+    }
+
+    header .logo {
+        max-width: 30%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    header nav ul {
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    header nav li {
+        margin-right: 3px;
+    }
+
+    header nav li a {
+        font-size: 20px;
+    }
+
+    .btn {
+        min-width: 165px;
+    }
+
+    header form {
+        max-width: 210px;
+    }
+
+    header input {
+        max-width: 75%;
+    }
+
+    header .logo {
+        max-width: 335px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .btn_basket {
+        clear: right;
+    }
+
+    header form {
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    header form,
+    .logo,
+    .btn {
+        float: none;
+        margin: auto auto 15px auto;
+        clear: both;
+    }
+
+    header form {
+        max-width: none;
+        width: 100%;
+    }
+
+    header nav li {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    header nav li a {
+        font-size: 25px;
+    }
+
+    .social_icons {
+        text-align: center;
+    }
+
+    header nav .social_icons a {
+        float: none;
+    }
+}
