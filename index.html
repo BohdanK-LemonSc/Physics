@@ -6,25 +6,34 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trainers</title>
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"-->
-          <!--integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/css-reset.css">
+    <link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <script src="js/jquery-2.2.1.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
+<div class="login_window" id="login" title="Enter username and password">
+    <form action="" method="post">
+        <label for="name">Username:</label>
+        <input type="text" id="name" placeholder="Enter username">
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" placeholder="Enter password">
+        <button type="submit">ENTER</button>
+    </form>
+</div>
 <header>
     <div class="bg_dark_color">
         <div class="container clearfix">
             <a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
             <a href="#" class="btn btn_sign"><i class="fas fa-user-plus"></i>sign up now</a>
-            <a href="#" class="btn btn_login"><i class="far fa-user"></i>log in</a>
+            <a href="#" id="login-btn" class="btn btn_login"><i class="far fa-user"></i>log in</a>
             <a href="#" class="btn btn_basket"><i class="fas fa-shopping-cart"></i>online store</a>
             <form action="" name="search" method="post" class="clearfix">
                 <input type="text" placeholder="Search">

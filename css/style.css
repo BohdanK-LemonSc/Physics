@@ -196,7 +196,7 @@ h1 {
     margin: auto;
     box-sizing: border-box;
     padding: 0 50px;
-    box-shadow: 10px 10px 45px -12px rgba(0,0,0,.2);
+    box-shadow: 10px 10px 45px -12px rgba(0, 0, 0, .2);
 }
 
 .succes_stories .content h2 {
@@ -271,5 +271,62 @@ h1 {
 
 .owl-carousel button.owl-dot.active span {
     background-color: red;
-    transform: scale(2,2);
+    transform: scale(2, 2);
+}
+
+/*Stylizing login dialog*/
+
+.ui-widget-content {
+    background-color: #454545;
+    border-radius: 0;
+    border: none;
+    color: white;
+    font-family: MetropolisMedium, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+
+
+.ui-dialog .ui-dialog-titlebar {
+    font-family: bebasneueregular, Arial, sans-serif;
+    color: white;
+    background-color: #2b2b2b;
+    font-size: 19px;
+    font-weight: 100;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.ui-dialog .ui-dialog-title {
+    float: none;
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+
+.ui-dialog .ui-state-hover {
+    background: none;
+    border: none;
+}
+
+.login_window label {
+    min-width: 100px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.login_window input {
+    width: 150px;
+}
+
+.login_window button[type=submit] {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 1px;
+    box-shadow: 4px 4px 14px 2px #2b2b2b;
+    cursor: pointer;
 }
