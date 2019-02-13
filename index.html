@@ -11,11 +11,14 @@
     <link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <script src="js/jquery-2.2.1.js"></script>
     <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/clipboard.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -41,17 +44,17 @@
                     <img src="images/search_icon.png" alt="btn_search">
                 </button>
             </form>
-            <nav class="clearfix">
-                <ul>
-                    <li><a href="#">WORKOUTS</a></li>
-                    <li><a href="#">NUTRITION</a></li>
-                    <li><a href="#">OUR TRAINERS</a></li>
-                    <li><a href="#">COMPETITION PREP</a></li>
-                    <li><a href="#">TRAINING PROGRAMS</a></li>
-                    <li><a href="#">SUCCESS STORIES</a></li>
-                    <li><a href="#">E-BOOKS</a></li>
+            <nav class="menu menu--viola clearfix" id="Viola">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--current"><a href="#" class="menu__link">WORKOUTS</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">NUTRITION</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">OUR TRAINERS</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">COMPETITION PREP</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">TRAINING PROGRAMS</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">SUCCESS STORIES</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">E-BOOKS</a></li>
                 </ul>
-                <div class="social_icons"><a href="#"><i class="fab fa-youtube-square"></i></a>
+                <div class="social_icons"><a href="#"><i class="fab fa-youtube"></i></a>
                     <a href="#"><i class="fab fa-twitter-square"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-facebook"></i></a></div>
@@ -114,5 +117,56 @@
         </div>
     </div>
 </section>
+<script>
+    (function() {
+        [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+            var menuItems = menu.querySelectorAll('.menu__link'),
+                setCurrent = function(ev) {
+                    ev.preventDefault();
+
+                    var item = ev.target.parentNode; // li
+
+                    // return if already current
+                    if (classie.has(item, 'menu__item--current')) {
+                        return false;
+                    }
+                    // remove current
+                    classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+                    // set current
+                    classie.add(item, 'menu__item--current');
+                };
+
+            [].slice.call(menuItems).forEach(function(el) {
+                el.addEventListener('click', setCurrent);
+            });
+        //    **********************************************************
+            [].slice.call(menuItems).forEach(function(el) {
+                el.addEventListener('mouseover', setCurrent);
+            });
+        });
+
+        [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+            link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+            new Clipboard(link);
+            link.addEventListener('click', function() {
+                classie.add(link, 'link-copy--animate');
+                setTimeout(function() {
+                    classie.remove(link, 'link-copy--animate');
+                }, 300);
+            });
+            //***************************************************
+
+            link.addEventListener('mouseover', function() {
+                classie.add(link, 'link-copy--animate');
+                setTimeout(function() {
+                    classie.remove(link, 'link-copy--animate');
+                }, 300);
+            });
+
+        //    ****************************************************
+
+        });
+    })(window);
+</script>
 </body>
 </html>

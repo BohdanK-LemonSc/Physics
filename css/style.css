@@ -153,12 +153,12 @@ header nav li a {
     font-family: bebasneueregular, Arial, sans-serif;
     display: block;
     padding: 5px 6px;
-    border-bottom: 4px solid transparent;
+    /*border-bottom: 4px solid transparent;*/
 }
 
-header nav li a:hover {
-    border-bottom: 4px solid #db0100;
-}
+/*header nav li a:hover {*/
+    /*border-bottom: 4px solid #db0100;*/
+/*}*/
 
 header nav .social_icons a {
     float: right;
@@ -329,4 +329,15 @@ h1 {
     border-radius: 1px;
     box-shadow: 4px 4px 14px 2px #2b2b2b;
     cursor: pointer;
+}
+
+.menu--viola .menu__item::before, .menu--viola .menu__item::after, .menu--viola .menu__link::before, .menu--viola .menu__link::after {
+    content: '';
+    position: absolute;
+    background: red;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+}
+.menu--viola .menu__item--current .menu__link {
+    color: red;
 }

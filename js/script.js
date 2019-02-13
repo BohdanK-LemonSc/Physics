@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $('.physics_slider').owlCarousel({
         loop: true,
         margin: 10,
@@ -20,4 +21,6 @@ $(document).ready(function () {
         $("#login").dialog('open');
     });
     // $( ".selector" ).dialog( "close" );
+
 });
+
