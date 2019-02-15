@@ -23,12 +23,22 @@
 </head>
 <body>
 <div class="login_window" id="login" title="Enter username and password">
-    <form action="" method="post">
+    <form action="" method="post" name="login">
         <label for="name">Username:</label>
         <input type="text" id="name" placeholder="Enter username">
         <label for="pass">Password:</label>
         <input type="password" id="pass" placeholder="Enter password">
         <button type="submit">ENTER</button>
+    </form>
+</div>
+<div class="sign_up_window" id="signup" title="Forgot your password?">
+    <form action="" method="post" name="signup">
+        <label for="name">ENTER YOUR
+            EMAIL:</label>
+        <input type="email" id="email" placeholder="Enter username">
+        <button type="submit">Reset password</button>
+        <span>OR</span>
+        <a href="#"><i class="fab fa-facebook-f"></i> Login with facebook</a>
     </form>
 </div>
 <header>
@@ -117,56 +127,5 @@
         </div>
     </div>
 </section>
-<script>
-    (function() {
-        [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
-            var menuItems = menu.querySelectorAll('.menu__link'),
-                setCurrent = function(ev) {
-                    ev.preventDefault();
-
-                    var item = ev.target.parentNode; // li
-
-                    // return if already current
-                    if (classie.has(item, 'menu__item--current')) {
-                        return false;
-                    }
-                    // remove current
-                    classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
-                    // set current
-                    classie.add(item, 'menu__item--current');
-                };
-
-            [].slice.call(menuItems).forEach(function(el) {
-                el.addEventListener('click', setCurrent);
-            });
-        //    **********************************************************
-            [].slice.call(menuItems).forEach(function(el) {
-                el.addEventListener('mouseover', setCurrent);
-            });
-        });
-
-        [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
-            link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
-            new Clipboard(link);
-            link.addEventListener('click', function() {
-                classie.add(link, 'link-copy--animate');
-                setTimeout(function() {
-                    classie.remove(link, 'link-copy--animate');
-                }, 300);
-            });
-            //***************************************************
-
-            link.addEventListener('mouseover', function() {
-                classie.add(link, 'link-copy--animate');
-                setTimeout(function() {
-                    classie.remove(link, 'link-copy--animate');
-                }, 300);
-            });
-
-        //    ****************************************************
-
-        });
-    })(window);
-</script>
 </body>
 </html>

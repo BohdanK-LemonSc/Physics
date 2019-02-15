@@ -55,6 +55,12 @@
     header .logo {
         max-width: 335px;
     }
+    .style-signup {
+        width: 75%!important;
+    }
+    .sign_up_window.ui-dialog-content form {
+        padding: 25px 50px 70px 50px;
+    }
 }
 
 
@@ -66,6 +72,13 @@
 
     header form {
         float: left;
+    }
+
+    .style-signup {
+        width: 90%!important;
+    }
+    .sign_up_window.ui-dialog-content form {
+        padding: 25px 20px 50px 20px;
     }
 }
 
@@ -120,4 +133,21 @@
     .physics_slider .item p {
         padding: 20px 25px;
     }
+
+    .sign_up_window.ui-dialog-content form {
+        padding: 15px 10px 40px 10px;
+    }
+
+    .style-signup .sign_up_window input,
+    .style-signup .sign_up_window label {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .style-signup .sign_up_window label {
+        margin-bottom: 15px;
+    }
+
 }

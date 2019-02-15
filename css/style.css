@@ -19,6 +19,16 @@
     url('../fonts/bebasneueregular.svg#bebasneueregular') format('svg');
 }
 
+@font-face {
+    font-family: 'now_bold';
+    src: url('../fonts/now_bold.eot');
+    src: url('../fonts/now_bold.eot') format('embedded-opentype'),
+    url('../fonts/now_bold.woff2') format('woff2'),
+    url('../fonts/now_bold.woff') format('woff'),
+    url('../fonts/now_bold.ttf') format('truetype'),
+    url('../fonts/now_bold.svg#now_bold') format('svg');
+}
+
 body {
     padding-bottom: 100px;
     overflow-x: hidden;
@@ -287,8 +297,7 @@ h1 {
 }
 
 
-
-.ui-dialog .ui-dialog-titlebar {
+ .ui-dialog .ui-dialog-titlebar {
     font-family: bebasneueregular, Arial, sans-serif;
     color: white;
     background-color: #2b2b2b;
@@ -306,7 +315,7 @@ h1 {
     background-image: url("images/ui-icons_ffffff_256x240.png");
 }
 
-.ui-dialog .ui-state-hover {
+.login_window  .ui-dialog .ui-state-hover {
     background: none;
     border: none;
 }
@@ -340,4 +349,98 @@ h1 {
 }
 .menu--viola .menu__item--current .menu__link {
     color: red;
+}
+
+.sign_up_window.ui-dialog-content {
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+    background-color: transparent;
+}
+
+.sign_up_window.ui-dialog-content form {
+    background-color: white;
+    padding: 35px 90px 160px 90px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid black;
+}
+
+.style-signup {
+    width: 50%!important;
+    background-color: transparent;
+}
+
+.style-signup .sign_up_window label,
+.style-signup .sign_up_window span{
+    color: black;
+    text-transform: uppercase;
+}
+
+.style-signup .sign_up_window label {
+    width: 30%;
+    max-width: 145px;
+    margin-right: 5%;
+    text-align: center;
+    display: block;
+    float: left;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.style-signup .sign_up_window input {
+    width: 60%;
+    max-width: 380px;
+    float: right;
+    line-height: 60px;
+    border-radius: 2px;
+    border: 1px solid #b7b7b7;
+    margin-bottom: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+}
+
+.style-signup .sign_up_window button,
+.style-signup .sign_up_window  a {
+    display: block;
+    clear: both;
+    width: 0;
+    min-width: 80%;
+    max-width: 525px;
+    margin: auto;
+    font-size: 24px;
+    padding: 15px 0;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: now_bold, Helvetica, sans-serif;
+}
+
+.style-signup .sign_up_window  span {
+    display: block;
+    padding: 25px 0;
+    font-size: 22px;
+    text-align: center;
+}
+
+.style-signup .sign_up_window  a {
+    color: white;
+    background-color: #547aca;
+}
+
+.style-signup.ui-dialog .ui-dialog-titlebar {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    font-family: now_bold, Helvetica, sans-serif;
+}
+
+.style-signup.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+    top: 20%;
 }
